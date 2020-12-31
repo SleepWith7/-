@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/check/check",
+    "pages/home/home",
+    "pages/add/add",
+    "pages/mine/mine",
+    "pages/about/about",
+    "pages/bgColor/bgColor"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "passbook",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "cu-custom": "/components/cu-custom/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

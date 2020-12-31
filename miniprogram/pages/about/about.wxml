@@ -1,0 +1,30 @@
+<cu-custom bgColor="{{bgColor}}" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">关于</view>
+</cu-custom>
+
+
+<view class="card">
+  <text class="card-title">关于『密码本』小程序</text>
+  <view class="card-detail">
+    <text class="title">使用说明</text>
+    <text class="desc">1. 主密码：首次进入小程序要设置主密码，主密码用于查看存储在本地的数据，您可以在“我的”页面中进行修改。</text>
+    <text class="desc">2. 由于微信自身机制，您在清理缓存数据时会发生数据丢失情况，请在清理手机前备份数据。</text>
+		<text class="desc">3. 服务端账号密码存储使用AES对称加密方式进行加密，下载备份时需要输入您最近一次上传时输入的密码。</text>
+		<text class="desc">4. 如密码丢失，备份的数据将不能找回，但您仍可以在“我的”页面中清空云端备份。</text>
+    <text class="desc">5. 数据均存储至微信官方云开发数据库中，数据加密存储，不丢不盗!</text>
+  </view>
+  <view class="card-detail">
+    <text class="title">关于项目</text>
+    <text class="desc">1. 此项目为河南理工大学计算机学院2016级本科生毕业设计项目。</text>
+    <text class="desc">2. 此项目开源于Github，现阶段仅供参考学习、展示交流。</text>
+    <text class="desc">3. 如在使用中有任何问题或改进建议请联系我</text>
+		<text class="desc">E-mail：311609040322@home.hpu.edu.cn</text>
+  </view>
+</view>
+
+	<view style="height:100rpx;"></view>
+  
+	<view class='edition'>版本号：{{version}}</view>
+
+

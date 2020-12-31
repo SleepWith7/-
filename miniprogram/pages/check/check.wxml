@@ -1,0 +1,20 @@
+<view class="container">
+  <image class="{{keyboard?'show':''}}" src="../../images/bg.png"></image>
+</view>
+
+<view wx:if="{{keyboard}}" class="modal {{keyboard?'show':''}}">
+  <view>{{title}}</view>
+  <view>
+    <view wx:for="{{pass}}" wx:key='index' class="{{ item!=null ? 'active' : '' }}"></view>
+  </view>
+  <view class="box">
+    <view wx:for="{{number}}" wx:for-item="numberitem" wx:key='*this'>
+      <button bindtap="num" hover-class="hover" wx:for="{{numberitem}}" wx:key="*this" data-num="{{item}}">{{item}}</button>
+    </view>
+    <view>
+      <button bindtap="startAuth" hover-class="hover">指纹</button>
+      <button bindtap="num" hover-class="hover" data-num="{{0}}">0</button>
+      <button bindtap="del" hover-class="hover">Del</button>
+    </view>
+  </view>
+</view>

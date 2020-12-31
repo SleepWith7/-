@@ -1,0 +1,33 @@
+<cu-custom bgColor="{{bgColor}}" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">{{title}}</view>
+</cu-custom>
+
+<view class="container">
+  <view class="card">
+
+    <view>
+      <text class="{{bgColor}}"></text>{{title}}
+    </view>
+    <view class="cardbox">
+      <view>
+        <text>网站：</text>
+        <input bindinput="name" value="{{name}}" focus="{{false}}" placeholder="网站名（如腾讯QQ）"/>
+      </view>
+      <view>
+        <text>账号：</text>
+        <input bindinput="nicename" value="{{nicename}}" placeholder="请输入账号"/>
+      </view>
+      <view>
+        <text>密码：</text>
+        <input bindinput="password" value="{{password}}" placeholder="请输入密码"/>
+      </view>
+      <view>
+        <text decode="{{true}}">&nbsp;&nbsp;备注：</text>
+        <input bindinput="remarks" value="{{remarks}}" placeholder="备注（如其他登录名）"/>
+      </view>
+    </view>
+
+  </view>
+  <button bindtap="up" class="{{bgColor}}">确 定</button>
+</view>
